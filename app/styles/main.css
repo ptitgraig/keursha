@@ -1,20 +1,11 @@
 /* Global */
 
-@font-face {
-	font-family: 'deconeuelight';
-	src: url('../fonts/deconeue-light-webfont.eot');
-	src: url('../fonts/deconeue-light-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/deconeue-light-webfont.woff') format('woff'),
-	     url('../fonts/deconeue-light-webfont.ttf') format('truetype'),
-	     url('../fonts/deconeue-light-webfont.svg#deconeuelight') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 body {
-	font-family: 'Helvetica', sans-serif;
+	/*font-family: 'Signika', sans-serif;*/
+	font-family: 'Noticia Text', serif;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.25em;
+	line-height: 1.50em;
 	color: #8a8683;
 	background-color:#fff;
 }
@@ -135,7 +126,7 @@ h2 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#333;
+	color: #8a8683;
 	font-weight: 700;
 }
 #slide1 h2 {
@@ -207,9 +198,13 @@ h2 {
 /* Slide 4 */
 
 #slide4{
-	background-image:url('../images/apropos-bg.png');
-	background-color:#8a8683;
+	background: #bde2df url('../images/anne.png') ;
+	/*background-position-x: right !important;	 */
+	/*background-color:#8a8683;*/
 	color:#ffffff;
+}
+#slide4 .container {
+	padding:40px;
 }
 #slide4 h1 {
 	font-size: 3.8em;
