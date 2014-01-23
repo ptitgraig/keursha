@@ -1,8 +1,31 @@
 /* Global */
 
+@font-face {
+    font-family: 'klinic_slablight';
+    src: url('../fonts/klinicslablight-webfont.eot');
+    src: url('../fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klinicslablight-webfont.woff') format('woff'),
+         url('../fonts/klinicslablight-webfont.ttf') format('truetype'),
+         url('../fonts/klinicslablight-webfont.svg#klinic_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('../fonts/blanch_caps-webfont.eot');
+    src: url('../fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blanch_caps-webfont.woff') format('woff'),
+         url('../fonts/blanch_caps-webfont.ttf') format('truetype'),
+         url('../fonts/blanch_caps-webfont.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
 	/*font-family: 'Signika', sans-serif;*/
-	font-family: 'Noticia Text', serif;
+	font-family: 'klinic_slablight', serif;
 	font-weight: 400;
 	font-size: 1.25em;
 	line-height: 1.50em;
@@ -109,7 +132,12 @@ h2 {
 
 /* Deco */
 #decorative {
-	margin-top: 150px;
+	
+	position: absolute;
+}
+#decorative-2 {
+	
+	position: absolute;
 }
 
 
@@ -117,24 +145,48 @@ h2 {
 /* Slide 1 */ 
 
 #slide1{
-	background-image:url('../images/diamands.png');
+	background-image:url('../images/diamands-bis.png');
 	background-repeat: no-repeat;
 	background-position: right middle;
 	background-color:#ffffff;
 }
 #slide1 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	line-height: 0px;
-	color: #8a8683;
+	font-family: 'blanchcaps';
+	font-size: 10em;
+	line-height: 0.5em;
+	margin: 0;
+	/*letter-spacing: -3px;*/
+	/*line-height: 0px;*/
+	color: #fffcdf;
 	font-weight: 700;
+	background-color: #b5ddc2;
 }
 #slide1 h2 {
+	font-family: 'blanchcaps';
 	font-size: 2em;
-	color: #8a8683;
+	color: #fffcdf;
+	background-color: #cf4b25;
 	line-height: 0px;
 	padding-bottom:20px;
+	padding-top:20px;
 	font-weight: 400;
+}
+.impact {
+	width: 250px;
+	margin-top: 50px;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	font-family: 'blanchcaps';
+	color:#fffcdf;
+	background-color: #cf4b25;
+	line-height: 1em;	
+}
+.impact p {
+	margin: 5px;
+	font-family: 'klinic_slablight';
+	font-size: .75em;
+	font-weight: 400;
+	line-height: 1.15em;
 }
 
 
@@ -148,6 +200,7 @@ h2 {
 	color:#ffffff;
 }
 #slide2 h1 {
+	font-family: 'blanchcaps';
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
@@ -155,6 +208,7 @@ h2 {
 	font-weight: 700;
 }
 #slide2 h2 {
+	font-family: 'blanchcaps';
 	font-size: 2em;
 	color: #ffffff;
 	line-height: 0px;
@@ -171,7 +225,7 @@ h2 {
 	background-color:#ffffff;
 }
 #slide3 h1 {
-	font-size: 3.8em;
+	font-size: 5em;
 	letter-spacing: -3px;
 	line-height: 0px;
 	color:#8a8683;
