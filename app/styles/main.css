@@ -201,17 +201,18 @@ h2 {
 }
 #slide2 h1 {
 	font-family: 'blanchcaps';
-	font-size: 3.8em;
+	font-size: 5.8em;
 	letter-spacing: -3px;
-	line-height: 0px;
-	color:#ffffff;
 	font-weight: 700;
+	margin: 0;
+	color: #64cb79;
+	background-color: #fff;
+	padding: 15px 5px;
 }
 #slide2 h2 {
 	font-family: 'blanchcaps';
 	font-size: 2em;
 	color: #ffffff;
-	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
 }
