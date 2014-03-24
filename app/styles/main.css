@@ -30,7 +30,8 @@ body {
 	font-size: 1.25em;
 	line-height: 1.50em;
 	color: #8a8683;
-	background-color:#fff;
+	background:#fff url(../images/dot.png);
+	/*background-color:#fff;*/
 }
 img {
 	max-width: 100%;
@@ -148,24 +149,44 @@ h2 {
 	background-image:url('../images/diamands-bis.png');
 	background-repeat: no-repeat;
 	background-position: right middle;
-	background-color:#ffffff;
+	/*background-color:#ffffff;*/
 }
 #slide1 h1 {
-	font-family: 'blanchcaps';
-	font-size: 10em;
-	line-height: 0.5em;
+	/*font-family: 'blanchcaps';*/
+	font-size: 3em;
+	line-height: 1em;
 	margin: 0;
 	/*letter-spacing: -3px;*/
 	/*line-height: 0px;*/
-	color: #fffcdf;
+	color: #d6cec0;
 	font-weight: 700;
-	background-color: #b5ddc2;
+	padding:20px 10px;
+	background-color: #d28871;
+	transition: all 2s ease;
+	text-shadow:1px 1px 1px #373737;
+	border-top-right-radius: 50px;
+	border-bottom:1px solid #c46446;
+	-moz-transform:rotate(-1deg);
+	-webkit-transform:rotate(-1deg);
+	transform:rotate(-1deg);
+}
+#slide1 h1 span {
+	font-family: Impact;
+	text-shadow:1px 1px 1px #fff;
+	font-weight: 700;
+	color:#8b9570;
+}
+#slide1 h1:hover {
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	transform:rotate(0deg);
+
 }
 #slide1 h2 {
 	font-family: 'blanchcaps';
 	font-size: 2em;
 	color: #fffcdf;
-	background-color: #cf4b25;
+	background-color: #FFAE00;
 	line-height: 0px;
 	padding-bottom:20px;
 	padding-top:20px;
@@ -178,8 +199,21 @@ h2 {
 	letter-spacing: 1px;
 	font-family: 'blanchcaps';
 	color:#fffcdf;
-	background-color: #cf4b25;
-	line-height: 1em;	
+	background: #d4ac74 url(../images/back5.jpg);
+	line-height: 1em;
+	border-radius: 3px;
+	border-bottom-right-radius: 15px;
+	text-shadow:1px 1px 1px #373737;
+
+	position: relative;
+	left: -20px;
+	top:-70px;
+	padding-right: 40px;
+	padding-left:20px;
+	box-shadow:0px 8px 28px 4px #373737;
+	-moz-transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	transform:rotate(-5deg);
 }
 .impact p {
 	margin: 5px;
@@ -189,17 +223,77 @@ h2 {
 	line-height: 1.15em;
 }
 
-
-
-
-/* Slide 2 */ 
-
-#slide2{
-	background-image:url('../images/keursha-bg.png');
-	background-color:#f68f67;
-	color:#ffffff;
+.paper {
+	background: transparent url(../images/pattern-lin.jpg);
+	padding:30px;
+	border-top-left-radius: 30px;
 }
-#slide2 h1 {
+
+.video-holder {
+	background: transparent url(../images/bg-video.jpg) no-repeat 0 0;
+	background-size: 100%;
+	height: 301px;
+	margin-right: 40px;
+	padding: 18px;
+	vertical-align: top;
+	width: 537px
+}
+
+.square {
+	display:block;
+	width: 15%;
+	height: 100px;
+	background-color: red;
+	margin:5px;
+	border:1px solid #FFF;
+}
+.square.fiancaille {
+	background-color: white;
+	border-color:#000;
+}
+.square.boucle {
+	background-color: blue;
+	border-color:#000;
+}
+.square.pendentif {
+	background-color: yellow;
+	border-color:#000;
+}
+.square.alliance {
+	background-color: green;
+	border-color:#000;
+}
+.square.bague {
+	background-color: orange;
+	border-color:#000;
+}
+.square.collier {
+	background-color: purple;
+	border-color:#000;
+}
+.square.bracelet {
+	background-color: black;
+	border-color:#000;
+}
+
+
+/* Slide 3 */ 
+
+#slide3{
+	/*background-image:url('../images/keursha-bg.png');*/
+	background-image:url('../images/back1.jpg');
+	background-size: cover;
+	/*background-color:#FFD576;*/
+	color:#333;
+	font-weight: 700;
+	/*font-size: 12px;*/
+	/*font-family: Arial;*/
+	text-shadow:1px 1px 1px #333;
+	border-top:10px solid #fff;
+
+
+}
+#slide3 h1 {
 	font-family: 'blanchcaps';
 	font-size: 5.8em;
 	letter-spacing: -3px;
@@ -209,7 +303,7 @@ h2 {
 	background-color: #fff;
 	padding: 15px 5px;
 }
-#slide2 h2 {
+#slide3 h2 {
 	font-family: 'blanchcaps';
 	font-size: 2em;
 	color: #ffffff;
@@ -220,19 +314,19 @@ h2 {
 
 
 
-/* Slide 3 */ 
+/* Slide 2 */ 
 
-#slide3{
+#slide2{
 	background-color:#ffffff;
 }
-#slide3 h1 {
+#slide2 h1 {
 	font-size: 5em;
 	letter-spacing: -3px;
 	line-height: 0px;
 	color:#8a8683;
 	font-weight: 700;
 }
-#slide3 h2 {
+#slide2 h2 {
 	font-size: 2em;
 	color: #8a8683;
 	line-height: 0px;
@@ -253,7 +347,8 @@ h2 {
 /* Slide 4 */
 
 #slide4{
-	background: #bde2df url('../images/anne.png') ;
+	background: #bde2df url('../images/back6.jpg') ;
+	background-size: cover;
 	/*background-position-x: right !important;	 */
 	/*background-color:#8a8683;*/
 	color:#ffffff;
@@ -310,9 +405,20 @@ h2 {
 }
 .swipe-wrap > div {
 	float:left;
-	width:100%;
+	width:150px;
 	position: relative;
 	text-align: center;
+	height:260px;
+	border-radius: 130px;
+}
+.swipe-wrap > div.bague1 {
+	background: #fff url('../images/bague1.jpeg') no-repeat center center;
+}
+.swipe-wrap > div.bague2 {
+	background: #fff url('../images/bague2.jpeg') no-repeat center center;
+}
+.swipe-wrap > div.bague3 {
+	background: #fff url('../images/bague3.jpeg') no-repeat center center;
 }
 .swiper-controller {
 	width:125px;

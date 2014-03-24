@@ -55,7 +55,8 @@ jQuery(document).ready(function ($) {
  
     window.mySwipeB = Swipe(sliderB, {
         speed:400,
-        continuous:false,
+        continuous:true,
+        auto: 3000,
         callback : function(index, elem) {
 
         }
@@ -81,7 +82,18 @@ jQuery(document).ready(function ($) {
         } else {
             mySwipeP.slide(index, 300);
         }
-    })
+    });
+
+    $("#produits").isotope({
+      // options
+        itemSelector: '.square',
+        layoutMode: 'fitRows'
+    });
+
+    $('#filters').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $("#produits").isotope({ filter: filterValue });
+    });
 
 
 });
