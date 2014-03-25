@@ -74,13 +74,13 @@
                 </div>
                 <div class="grid_4 impact omega">
                     <p>Nos dernières oeuvres, toutes fraiches de la bombe baby.</p>
-                    <div id="swiper-bague" class="swipe">
+                    <!--<div id="swiper-bague" class="swipe">
                       <div class="swipe-wrap">
                         <div class="bague1"></div>
                         <div class="bague2"></div>
                         <div class="bague3"></div>
                       </div>
-                    </div>
+                    </div>-->
                     <!--
                     <ol class="swiper-controller bague">
                         <li data-to-slide="1"></li>
@@ -103,12 +103,96 @@
 
 
             
-
+            <div class="cloud"></div>
 
 
             <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.1">
-                <div class="container clearfix">
 
+                <div class="container clearfix">
+                    <h2>La gamme de bijoux</h2>
+
+                    <div class="selection">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#" data-filter="*">Tout</a>
+                            </li>
+                            <li class="dropdown">
+                                <a id="typebijou" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    Type de bijou
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="typebijou-menu" class="dropdown-menu" role="menu" aria-labbeledby="typebijou">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".alliance">Alliances</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".fiancaille">Bagues de fiancailles</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".bague">Bagues</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle">Boucles d'oreilles</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif">Pendentifs</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".collier">Colliers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a id="materiau" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    Matériau
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="materiau">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="*">Indifférent</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".or">Or</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".argent">Argent</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".platine">Platine</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle">Boucles d'oreilles</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif">Pendentifs</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".collier">Colliers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a id="sexe" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    Sexe
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="sexe">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="*">Indifférent</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".homme">Homme</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".femme">Femme</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+<!--
                     <div id="filters" class="button-group">
                         <button data-filter="*">Tout</button>
                         <button data-filter=".alliance">alliances</button>
@@ -118,14 +202,14 @@
                         <button data-filter=".pendentif">pendentifs</button>
                         <button data-filter=".collier">colliers</button>
                         <button data-filter=".bracelet">bracelets</button>
-                    </div>
+                    </div>-->
 
                     <div id="produits">
-                        <div class="square alliance">ALLIANCE</div>
-                        <div class="square alliance">ALLIANCE</div>
-                        <div class="square bracelet">BRACELET</div>
-                        <div class="square bague">BAGUE</div>
-                        <div class="square fiancaille">FIANCAILLE</div>
+                        <div class="square alliance argent homme">ALLIANCE argent homme</div>
+                        <div class="square alliance or">ALLIANCE or femme</div>
+                        <div class="square bracelet or femme">BRACELET or femme </div>
+                        <div class="square bague platine femme">BAGUE platine femme</div>
+                        <div class="square fiancaille">FIANCAILLE or</div>
                         <div class="square alliance">ALLIANCE</div>
                         <div class="square fiancaille">FIANCAILLE</div>
                         <div class="square fiancaille">FIANCAILLE</div>
@@ -263,6 +347,7 @@
         <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src='scripts/swipe.js'></script>
         <script type="text/javascript" src='scripts/isotope.js'></script>
+        <script type="text/javascript" src="scripts/dropdown.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
 
         <!-- endbuild -->

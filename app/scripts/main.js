@@ -90,10 +90,25 @@ jQuery(document).ready(function ($) {
         layoutMode: 'fitRows'
     });
 
-    $('#filters').on( 'click', 'button', function() {
+    $('#typebijou-menu').on( 'click', 'a', function(e) {
+        e.preventDefault();
       var filterValue = $(this).attr('data-filter');
       $("#produits").isotope({ filter: filterValue });
     });
+
+    $('#materiau-menu').on( 'click', 'a', function(e) {
+        e.preventDefault();
+      var filterValue = $(this).attr('data-filter');
+      $("#produits").isotope({ filter: filterValue });
+    });
+
+    $('#sexe-menu').on( 'click', 'a', function(e) {
+        e.preventDefault();
+      var filterValue = $(this).attr('data-filter');
+      $("#produits").isotope({ filter: filterValue });
+    });
+
+    $('.dropdown-toggle').dropdown();
 
 
 });
