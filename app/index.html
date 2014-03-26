@@ -118,73 +118,107 @@
                             </li>
                             <li class="dropdown">
                                 <a id="typebijou" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                                    Type de bijou
+                                    <span>Type de bijou</span>
                                     <b class="caret"></b>
                                 </a>
-                                <ul id="typebijou-menu" class="dropdown-menu" role="menu" aria-labbeledby="typebijou">
+                                <ul id="typebijou-menu" class="dropdown-menu" role="menu" aria-labbeledby="typebijou" data-filter-group="typebijou">
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".alliance">Alliances</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Tous les types</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".fiancaille">Bagues de fiancailles</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".alliance" class="button">Alliances</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".bague">Bagues</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".fiancaille" class="button">Bagues de fiancailles</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle">Boucles d'oreilles</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".bague" class="button">Bagues</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif">Pendentifs</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle" class="button">Boucles d'oreilles</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".collier">Colliers</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif" class="button">Pendentifs</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".collier" class="button">Colliers</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a id="materiau" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                                    Matériau
+                                    <span>Matériau</span>
                                     <b class="caret"></b>
                                 </a>
-                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="materiau">
+                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="materiau" data-filter-group="materiau">
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter="*">Indifférent</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Tous les matériaux</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".or">Or</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".or" class="button">Or</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".argent">Argent</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".argent" class="button">Argent</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".platine">Platine</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".platine" class="button">Platine</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a id="materiau" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <span>Diamants</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="materiau" data-filter-group="materiau">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Indifférent</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".boucle">Boucles d'oreilles</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".diamant" class="button">Avec diamant</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".pendentif">Pendentifs</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".collier">Colliers</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=":not(.diamant)" class="button">Sans diamant</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a id="sexe" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
-                                    Sexe
+                                    <span>Sexe</span>
                                     <b class="caret"></b>
                                 </a>
-                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="sexe">
+                                <ul id="materiau-menu" class="dropdown-menu" role="menu" aria-labbeledby="sexe" data-filter-group="sexe">
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter="*">Indifférent</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="*" class="button">Indifférent</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".homme">Homme</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".homme" class="button">Homme</a>
                                     </li>
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".femme">Femme</a>
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".femme" class="button">Femme</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a id="prix" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                    <span>Prix</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul id="prix-menu" class="dropdown-menu" role="menu" aria-labbeledby="prix" data-filter-group="prix">
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter="" class="button">Indifférent</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".inf500" class="button">entre 501 et 1000 &euro;</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">entre 1001 et 2000 &euro;</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">entre 2001 et 3000 &euro;</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-filter=".sup500" class="button">&gt; 3000 &euro;</a>
                                     </li>
                                 </ul>
                             </li>
@@ -205,23 +239,36 @@
                     </div>-->
 
                     <div id="produits">
+                        
                         <div class="square alliance argent homme">ALLIANCE argent homme</div>
-                        <div class="square alliance or">ALLIANCE or femme</div>
-                        <div class="square bracelet or femme">BRACELET or femme </div>
+                        <div class="square alliance or homme">ALLIANCE or femme</div>
+                        <div class="square alliance or femme">ALLIANCE</div>
+                        <div class="square alliance platine homme">ALLIANCE</div>
+
+                        <div class="square fiancaille or">FIANCAILLE or</div>
+                        <div class="square fiancaille platine femme">FIANCAILLE</div>
+                        <div class="square fiancaille argent femme">FIANCAILLE</div>
+                        <div class="square fiancaille platine femme">FIANCAILLE</div>
+
                         <div class="square bague platine femme">BAGUE platine femme</div>
-                        <div class="square fiancaille">FIANCAILLE or</div>
-                        <div class="square alliance">ALLIANCE</div>
-                        <div class="square fiancaille">FIANCAILLE</div>
-                        <div class="square fiancaille">FIANCAILLE</div>
-                        <div class="square bracelet">BRACELET</div>
-                        <div class="square collier">COLLIER</div>
-                        <div class="square pendentif">PENDENTIF</div>
-                        <div class="square alliance">ALLIANCE</div>
-                        <div class="square fiancaille">FIANCAILLE</div>
-                        <div class="square boucle">BOUCLE</div>
-                        <div class="square bague">BAGUE</div>
-                        <div class="square collier">COLLIER</div>
-                        <div class="square collier">COLLIER</div>
+                        
+                        <div class="square bracelet argent femme ">BRACELET</div>
+                        <div class="square bracelet or femme">BRACELET or femme </div>
+
+                        <div class="square collier argent femme">COLLIER</div>
+                        <div class="square collier homme or">COLLIER</div>
+                        <div class="square collier homme platine">COLLIER</div>
+
+                        <div class="square pendentif argent femme">PENDENTIF</div>
+                        <div class="square pendentif or femme">PENDENTIF</div>
+                        
+                        <div class="square boucle platine femme">BOUCLE</div>
+                        <div class="square bague or homme">BAGUE or homme</div>
+                        <div class="square bague or femme">BAGUE or femme</div>
+                        <div class="square bague argent homme">BAGUE argent homme</div>
+                        <div class="square bague argent femme">BAGUE argent femme</div>
+
+                        
                     </div>
 
 <!--
@@ -347,6 +394,7 @@
         <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src='scripts/swipe.js'></script>
         <script type="text/javascript" src='scripts/isotope.js'></script>
+        <script type="text/javascript" src='scripts/mansonry-horizontal.js'></script>
         <script type="text/javascript" src="scripts/dropdown.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
 

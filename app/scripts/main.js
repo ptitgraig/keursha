@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
 
     var links = $('.navigation').find('li');
     slide = $('.slide');
-    button = $('.button');
+    //button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
     sliderB = document.getElementById('swiper-bague');
@@ -42,16 +42,17 @@ jQuery(document).ready(function ($) {
 
     links.click(function (e) {
         e.preventDefault();
+        alert('click');
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
 
-    button.click(function (e) {
+    /*button.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
 
-    });
+    });*/
  
     window.mySwipeB = Swipe(sliderB, {
         speed:400,
@@ -87,12 +88,48 @@ jQuery(document).ready(function ($) {
     $("#produits").isotope({
       // options
         itemSelector: '.square',
-        layoutMode: 'fitRows'
+        layoutMode:'masonry',
+        masonry: {
+            columnWidth:80
+        },
+        transitionDuration:"0.6s"
     });
 
+    // store filter for each group
+    var filters = {};
+
+    $('.selection').on('click', '.button', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        // get group key
+        var $dropdownMenu = $this.parentsUntil('.dropdown-menu').parent();
+        var filterGroup = $dropdownMenu.attr('data-filter-group');
+        $dropdownMenu.parent().children('.dropdown-toggle').find('span').text($this.text().trim());
+        // set filter for group
+        filters[ filterGroup ] = $this.attr('data-filter');
+        // combine filters
+        var filterValue = '';
+        for ( var prop in filters ) {
+            filterValue += filters[ prop ];
+            console.log(filterValue);
+        }
+        // set filter for Isotope
+        $("#produits").isotope({
+            itemSelector: '.square',
+            layoutMode:'masonry',
+            masonry: {
+                columnWidth:80    
+            },
+            transitionDuration:"0.6s",
+            filter: filterValue
+        });
+    });
+/*
     $('#typebijou-menu').on( 'click', 'a', function(e) {
         e.preventDefault();
       var filterValue = $(this).attr('data-filter');
+      var text = $(this).text();
+      $('#type-bijou').
       $("#produits").isotope({ filter: filterValue });
     });
 
@@ -107,7 +144,7 @@ jQuery(document).ready(function ($) {
       var filterValue = $(this).attr('data-filter');
       $("#produits").isotope({ filter: filterValue });
     });
-
+*/
     $('.dropdown-toggle').dropdown();
 
 
