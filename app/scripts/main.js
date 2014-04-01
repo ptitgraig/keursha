@@ -42,7 +42,6 @@ jQuery(document).ready(function ($) {
 
     links.click(function (e) {
         e.preventDefault();
-        alert('click');
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
@@ -124,6 +123,33 @@ jQuery(document).ready(function ($) {
             filter: filterValue
         });
     });
+
+    $('body').on('click', function(e) {
+        if ($(e.target).hasClass('square') || $(e.target).parent().hasClass('square')) {
+            return;
+        } else {
+            $("#produits").find('.square').removeClass('active');    
+        }
+        $(this).removeClass('square-open');
+        
+    });
+
+    $('#produits').on('click', '.square', function(e) {
+        $("#produits").find('.square').removeClass('active');
+        
+        
+        $('body').addClass('square-open');
+        /*$(this).css({
+            'width' : $('#produits').outerWidth(true)/2,
+            'height' : $('#produits').outerWidth(true)/2,
+            'top': 0,
+            'left':0,
+            'marginTop' : $('#produits').outerHeight(true)/4,
+            'marginLeft' : $('#produits').outerWidth(true)/4
+        });*/
+        $(this).addClass('active');
+
+    });
 /*
     $('#typebijou-menu').on( 'click', 'a', function(e) {
         e.preventDefault();
@@ -146,6 +172,10 @@ jQuery(document).ready(function ($) {
     });
 */
     $('.dropdown-toggle').dropdown();
+    $('.dropdown-toggle').on('click.openmenu', function(e){
+        e.preventDefault();
+        $("#produits").find('.square').removeClass('active');
+    });
 
 
 });

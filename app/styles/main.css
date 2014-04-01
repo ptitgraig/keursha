@@ -1,27 +1,6 @@
 /* Global */
 
-@font-face {
-    font-family: 'klinic_slablight';
-    src: url('../fonts/klinicslablight-webfont.eot');
-    src: url('../fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/klinicslablight-webfont.woff') format('woff'),
-         url('../fonts/klinicslablight-webfont.ttf') format('truetype'),
-         url('../fonts/klinicslablight-webfont.svg#klinic_slablight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'blanchcaps';
-    src: url('../fonts/blanch_caps-webfont.eot');
-    src: url('../fonts/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/blanch_caps-webfont.woff') format('woff'),
-         url('../fonts/blanch_caps-webfont.ttf') format('truetype'),
-         url('../fonts/blanch_caps-webfont.svg#blanchcaps') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 * {
 	box-sizing:border-box;
@@ -129,11 +108,20 @@ h2 {
 
 .slide{
 	background-attachment: fixed;
+	-webkit-backface-visibility:hidden;
+	-webkit-transform:translate3d(0,0,0) ;
 	width:100%;
 	height:auto;
 	position: relative;
 	padding:140px 0;
 }
+/*only for webkit  browsers
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .slide{ 
+        background-attachment: scroll;
+    }
+}
+*/
 
 /* Deco */
 #decorative {
@@ -248,11 +236,57 @@ h2 {
   	height: 70px;
   	margin: 5px;
 	background-color: red;
+	border:1px solid #333;
+	cursor: pointer;
+	opacity: 0.7;
+
+	/*css 3d tip from http://www.aerotwist.com/tutorials/protip-nobody-expects-3d/ */
 	
-	border:1px solid #000;
-	 -webkit-backface-visibility: hidden;
-    -webkit-transform: scale(1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	transform: translateY(0) scale(1, 1);
+	/*-webkit-transform : translateY(0) scale(0.95, 0.95);
+	-moz-transform : translateY(0) scale(0.95, 0.95);*/
+
+	/**/
+	-webkit-backface-visibility: hidden;
 }
+.square img {
+	max-width: 100%;
+}
+.square .price {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	
+	background-color: green;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 10px;
+	border-radius: 3px;
+
+}
+/* icon tag*/
+.square .price span {
+	left: -5px;
+	top:-5px;
+	font-size: 0.7em;
+}
+.square.active .price {
+	display: inline-block;
+}
+.square.active, .square.active:hover, .square.active:focus {
+	box-shadow: 0 11px 18px rgba(0,0,0,0.2);
+	transform: translateY(20px) scale(1.55, 1.55);
+	transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	opacity: 1;
+	z-index: 1000;
+}
+.square:hover, .square:focus {
+	box-shadow:0 0 15px rgba(0,0,0,0.5);
+	opacity: 1;
+}
+
 .square.fiancaille {
 	background-color: white;
 	border-color:#000;
@@ -301,6 +335,7 @@ h2 {
 	/*background-image:url('../images/pencil-flowers.jpg');*/
 	/*background-image:url('../images/pastel-flowers.jpg');*/
 	background-image:url('../images/daisies-pattern2.jpg');
+	-webkit-transform-style: preserve-3d;
 
     /*-webkit-transform: scale(1);*/
 	/*background-size: cover;*/
@@ -466,6 +501,9 @@ h2 {
 }
 
 /*dropdowns*/
+#produits {
+	position: relative;
+}
 #produits:before, #produits:after {
 	content: " ";
 	display: table;
@@ -478,6 +516,9 @@ h2 {
 	position: relative;
 	padding: 45px 15px 15px;
 	margin: 0 -15px 15px;	
+}
+.selection a {
+	color:#333;
 }
 .nav {
 	padding-left: 0;
@@ -669,7 +710,7 @@ ul {
 	}
 
 	.slide{
-		background-attachment: fixed;
+		background-attachment: scroll;
 		width:100%;
 		position: relative;
 		padding:150px 0;
@@ -741,7 +782,7 @@ ul {
 	}
 
 	.slide{
-		background-attachment: fixed;
+		background-attachment: scroll;
 		width:100%;
 		position: relative;
 		padding:150px 0;
