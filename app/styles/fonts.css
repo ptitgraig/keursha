@@ -24,11 +24,24 @@
 
 @font-face {
     font-family: 'rieslingregular';
-    src: url('../fontsriesling-webfont.eot');
-    src: url('../fontsriesling-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fontsriesling-webfont.woff') format('woff'),
-         url('../fontsriesling-webfont.ttf') format('truetype'),
-         url('../fontsriesling-webfont.svg#rieslingregular') format('svg');
+    src: url('../fonts/riesling-webfont.eot');
+    src: url('../fonts/riesling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/riesling-webfont.woff') format('woff'),
+         url('../fonts/riesling-webfont.ttf') format('truetype'),
+         url('../fonts/riesling-webfont.svg#rieslingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'royal_chickenitalic';
+    src: url('../fonts/royal_chicken-webfont.eot');
+    src: url('../fonts/royal_chicken-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/royal_chicken-webfont.woff') format('woff'),
+         url('../fonts/royal_chicken-webfont.ttf') format('truetype'),
+         url('../fonts/royal_chicken-webfont.svg#royal_chickenitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
