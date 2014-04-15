@@ -1,5 +1,5 @@
 /* Global */
-
+/* sunglow gold :#FFCC33;*/
 
 
 * {
@@ -12,9 +12,11 @@ body {
 	font-weight: 400;
 	font-size: 1.25em;
 	line-height: 1.50em;
-	color: #8a8683;
-	background:#fff url(../images/dot.png);
-	/*background-color:#fff;*/
+	/*color: #fdce43;*/
+	color: #fcc728;
+	/*background:#fff url(../images/dot.png);*/
+	background-color:#ccc;
+
 }
 img {
 	max-width: 100%;
@@ -145,6 +147,7 @@ h2 {
 }
 #slide1 h1 {
 	/*font-family: 'blanchcaps';*/
+	font-family : 'rieslingregular';
 	font-size: 3em;
 	line-height: 1em;
 	margin: 0;
@@ -153,20 +156,19 @@ h2 {
 	color: #d6cec0;
 	font-weight: 700;
 	padding:20px 10px;
-	background-color: #d28871;
+	background-color: #777;
 	transition: all 2s ease;
 	text-shadow:1px 1px 1px #373737;
 	border-top-right-radius: 50px;
-	border-bottom:1px solid #c46446;
 	-moz-transform:rotate(-1deg);
 	-webkit-transform:rotate(-1deg);
 	transform:rotate(-1deg);
 }
 #slide1 h1 span {
-	font-family: Impact;
+	/*font-family: Impact;*/
 	text-shadow:1px 1px 1px #fff;
 	font-weight: 700;
-	color:#8b9570;
+	color:#fcc728;
 }
 #slide1 h1:hover {
 	-moz-transform:rotate(0deg);
@@ -216,7 +218,8 @@ h2 {
 }
 
 .paper {
-	background: transparent url(../images/pattern-lin.jpg);
+	/*background: transparent url(../images/pattern-lin.jpg);*/
+	background-color:#eee;
 	padding:30px;
 	border-top-left-radius: 30px;
 }
@@ -332,14 +335,10 @@ h2 {
 
 #slide3{
 	/*background-image:url('../images/keursha-bg.png');*/
-	/*background-image:url('../images/pencil-flowers.jpg');*/
-	/*background-image:url('../images/pastel-flowers.jpg');*/
-	background-image:url('../images/daisies-pattern2.jpg');
-	-webkit-transform-style: preserve-3d;
-
+	
     /*-webkit-transform: scale(1);*/
 	/*background-size: cover;*/
-	/*background-color:#FFD576;*/
+	background-color:#FFD576;
 	color:#333;
 	font-weight: 700;
 	/*font-size: 12px;*/
@@ -355,8 +354,8 @@ h2 {
 	letter-spacing: -3px;
 	font-weight: 700;
 	margin: 0;
-	color: #64cb79;
-	background-color: #fff;
+	color: #C7C7C7;
+	text-shadow:1px 1px 1px #333;
 	padding: 15px 5px;
 }
 #slide3 h2 {
@@ -404,11 +403,12 @@ h2 {
 /* Slide 4 */
 
 #slide4{
-	background: #bde2df url('../images/back6.jpg') ;
-	background-size: cover;
+	/*background: #bde2df url('../images/back6.jpg') ;
+	background-size: cover;*/
+
 	/*background-position-x: right !important;	 */
-	/*background-color:#8a8683;*/
-	color:#ffffff;
+	background-color:#ccc;
+	color:#eee;
 }
 #slide4 .container {
 	padding:40px;

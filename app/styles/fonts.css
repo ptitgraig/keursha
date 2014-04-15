@@ -23,6 +23,18 @@
 }
 
 @font-face {
+    font-family: 'rieslingregular';
+    src: url('../fontsriesling-webfont.eot');
+    src: url('../fontsriesling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontsriesling-webfont.woff') format('woff'),
+         url('../fontsriesling-webfont.ttf') format('truetype'),
+         url('../fontsriesling-webfont.svg#rieslingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
